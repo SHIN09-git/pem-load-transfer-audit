@@ -174,6 +174,7 @@ def compare_tables(reference, work):
     import numpy as np
     import pandas as pd
     results = []
+    numeric_mismatches = []
     for relative in sorted(
         [p.relative_to(reference) for p in (reference / "04_results").glob("*.csv")]
         + [p.relative_to(reference) for p in (reference / "02_processed").glob("*.csv")]
@@ -188,8 +189,18 @@ def compare_tables(reference, work):
             a, b = left[col], right[col]
             if pd.api.types.is_numeric_dtype(a) and pd.api.types.is_numeric_dtype(b) and not pd.api.types.is_bool_dtype(a):
                 aa, bb = a.to_numpy(dtype=float), b.to_numpy(dtype=float)
-                if not np.allclose(aa, bb, rtol=1e-9, atol=1e-12, equal_nan=True):
-                    raise ValueError("Numeric mismatch: " + str(relative) + "/" + col)
+                close = np.isclose(aa, bb, rtol=1e-9, atol=1e-12, equal_nan=True)
+                if not close.all():
+                    bad = np.flatnonzero(~close)
+                    differences = np.abs(aa[bad] - bb[bad])
+                    numeric_mismatches.append({
+                        "path": relative.as_posix(), "column": col, "mismatches": int(len(bad)),
+                        "max_absolute_difference": str(float(np.max(differences))),
+                        "examples": [
+                            {"row": int(i), "reference": str(aa[i]), "recomputed": str(bb[i]),
+                             "keys": {k: str(left.iloc[i][k]) for k in
+                                      ("mea", "cycle", "start_min", "window_min", "model", "split") if k in left}}
+                            for i in bad[:3]]})
                 finite = np.isfinite(aa) & np.isfinite(bb)
                 if finite.any():
                     max_abs = max(max_abs, float(np.max(np.abs(aa[finite] - bb[finite]))))
@@ -198,6 +209,8 @@ def compare_tables(reference, work):
                 raise ValueError("Label mismatch: " + str(relative) + "/" + col)
         results.append({"path": relative.as_posix(), "rows": len(left), "columns": len(left.columns),
                         "finite_numeric_cells": n_numeric, "max_absolute_difference": max_abs})
+    if numeric_mismatches:
+        raise ValueError("Numeric mismatches: " + json.dumps(numeric_mismatches, ensure_ascii=False))
     def compare_json(a, b, where):
         if isinstance(a, dict):
             if not isinstance(b, dict) or set(a) != set(b):
