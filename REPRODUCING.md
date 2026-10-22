@@ -1,6 +1,6 @@
 # 复现说明
 
-本地发布候选为 1.0.0-rc.1。使用 Python 3.12。除完整重建时主动下载原始包外，三层入口不联网获取研究数据。依赖安装本身需要软件包源或本地缓存。
+本页对应正式版本 1.0.0。使用 Python 3.12。除完整重建时主动下载原始包外，三层入口不联网获取研究数据。依赖安装本身需要软件包源或本地缓存。
 
 每次运行将输出写到一个新目录，默认位于 `reproductions/时间戳-随机后缀/`。也可以传 `--output "一个尚不存在的目录"`。已有输出目录会被拒绝，不覆盖冻结结果。若某步失败，查看该次输出的 `validation.json` 和 `logs/`；修正原因后换一个新输出目录重跑。
 
@@ -66,7 +66,7 @@ python reproduce.py --mode full --raw-archive "path/to/pem_water_electrolysis_de
 
 `requirements.txt` 锁定本次使用的数值与绘图库及其依赖。`00_admin/environment.json` 是历史研究环境，包含报告制作等额外库；不应直接照抄为最小运行环境。
 
-本次实际通过的平台、运行范围和结果见 [VALIDATION.md](VALIDATION.md)。仓库附带 Windows/Ubuntu 的 GitHub Actions 配置，但本地候选未发布，不把配置文件的存在当作云端验证已经通过。
+本次实际通过的平台、运行范围和结果见 [VALIDATION.md](VALIDATION.md)。Windows/Ubuntu 的 GitHub Actions 实际运行状态见 [Actions](https://github.com/SHIN09-git/pem-load-transfer-audit/actions)；本页不以配置文件的存在代替运行结果。
 
 如改变模型、数据或参数，应重新生成并审阅结果和报告；不要只重算散列后继续使用旧结论。完整 ZIP 和生成结果在 `.gitignore` 中排除，避免意外加入未来公开提交。
 

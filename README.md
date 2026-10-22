@@ -1,7 +1,7 @@
 # PEM 水电解跨负载预测与再校准审计
 
 **JIN HANZHE · Independent Researcher, Chongqing, China**  
-项目代号：GRC_LoadTransfer_01 · 本地发布候选：1.0.0-rc.1 · 整理日期：2026-10-22  
+项目代号：GRC_LoadTransfer_01 · 正式版本：1.0.0 · 发布日期：2026-10-22  
 [English](README.en.md) · [中文研究报告](06_report/中文研究报告.md) · [复现说明](REPRODUCING.md) · [验证记录](VALIDATION.md) · [引用](CITATION.cff)
 
 本项目用公开的 PEM 水电解长期实验数据，检验“高负载时的出口氢浓度，能否预测随后低负载的出口氢浓度”。PEM 指聚合物电解质膜；GRC 指气体复合催化剂。项目的公开价值是展示时间漂移、基线选择、校准资料范围和标签开放时点怎样改变结论。
@@ -62,5 +62,5 @@
 
 作者与联系人为 **JIN HANZHE**，邮箱 jinhanzhe09@gmail.com。来源检查、分析、起草和公开整理使用 OpenAI Codex，AI 不列为作者；不声称已完成人工逐项科学核查或独立团队复核。完整披露见 [AUTHORSHIP.md](AUTHORSHIP.md)。
 
-原创软件采用 [MIT](LICENSE)；本项目文档、图表及派生数据采用 [CC BY 4.0](LICENSE-CC-BY-4.0.txt)。原始实验数据的权利和署名归上游作者，详见 [LICENSING.md](LICENSING.md) 与 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。使用本分析时，请同时引用本项目、[数据 DOI](https://doi.org/10.5281/zenodo.19361280) 和[原始论文](https://doi.org/10.1039/D6EY00106H)。本候选版尚未发布到 GitHub，没有公共仓库地址或本项目 DOI。
+原创软件采用 [MIT](LICENSE)；本项目文档、图表及派生数据采用 [CC BY 4.0](LICENSE-CC-BY-4.0.txt)。原始实验数据的权利和署名归上游作者，详见 [LICENSING.md](LICENSING.md) 与 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。使用本分析时，请同时引用本项目、[数据 DOI](https://doi.org/10.5281/zenodo.19361280) 和[原始论文](https://doi.org/10.1039/D6EY00106H)。公共仓库为 [SHIN09-git/pem-load-transfer-audit](https://github.com/SHIN09-git/pem-load-transfer-audit)，发布包见 [v1.0.0](https://github.com/SHIN09-git/pem-load-transfer-audit/releases/tag/v1.0.0)。本项目尚未申请 DOI。
 

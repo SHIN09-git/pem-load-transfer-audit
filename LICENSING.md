@@ -10,7 +10,7 @@
 
 CC BY 4.0 完整文本见 [LICENSE-CC-BY-4.0.txt](LICENSE-CC-BY-4.0.txt)，官方说明见 [Creative Commons](https://creativecommons.org/licenses/by/4.0/)。
 
-使用派生数据、图表或报告时，请注明本项目作者、数据来源及所做改动，保留许可链接。MIT 不改变上游实验数据的 CC BY 4.0 义务。这个候选包没有重新分发原始期刊论文、补充材料全文或第三方示例笔记本。
+使用派生数据、图表或报告时，请注明本项目作者、数据来源及所做改动，保留许可链接。MIT 不改变上游实验数据的 CC BY 4.0 义务。这个发布包没有重新分发原始期刊论文、补充材料全文或第三方示例笔记本。
 
 Original code is MIT-licensed. Original documentation, figures and derived tables are CC BY 4.0 with retained upstream attribution. No license grant from this project overrides third-party rights or suggests endorsement by upstream authors.
 

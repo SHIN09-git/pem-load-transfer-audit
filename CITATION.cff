@@ -1,8 +1,11 @@
 cff-version: 1.2.0
-message: "Please cite this local release candidate and the original dataset and paper. This reanalysis is not yet published."
+message: "Please cite this release and the original dataset and paper."
 type: software
 title: "PEM water electrolysis load-transfer prediction and recalibration audit"
-version: "1.0.0-rc.1"
+version: "1.0.0"
+date-released: "2026-10-22"
+repository-code: "https://github.com/SHIN09-git/pem-load-transfer-audit"
+url: "https://github.com/SHIN09-git/pem-load-transfer-audit/releases/tag/v1.0.0"
 authors:
   - family-names: JIN
     given-names: HANZHE

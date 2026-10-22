@@ -1,6 +1,6 @@
 # 本次验证记录
 
-验证日期：2026-10-22。对象：GRC_LoadTransfer_01 的本地公开候选 1.0.0-rc.1。平台：Windows，Python 3.12.14，新建虚拟环境，不继承系统第三方库。
+验证日期：2026-10-22。对象：GRC_LoadTransfer_01 的发布前研究包；这些计算结果用于正式版本 1.0.0。平台：Windows，Python 3.12.14，新建虚拟环境，不继承系统第三方库。
 
 ## 已执行的原始数据重建
 
@@ -41,5 +41,5 @@
 
 本次完整重建使用已核验的原始 ZIP 缓存，未为该运行重复下载 199 MB 数据；已重新访问官方 API 核实固定文件的许可、大小及 MD5。
 
-Windows 本机运行与 GitHub 云端运行分别记录。候选版附带 Windows/Ubuntu 的云端分析工作流，但当前未发布到 GitHub，尚无该项目云端运行记录。没有声称 macOS、Linux、其他 Python 版本或设备安全验证通过。
+以上记录对应发布前 Windows 本机验证。正式仓库的 Windows/Ubuntu 运行结果见 [Actions](https://github.com/SHIN09-git/pem-load-transfer-audit/actions)，发布附件中的 RELEASE_VALIDATION.json 记录发布提交对应的检查结果。云端流程执行保存结果核查和分析重跑，不重新下载并提取全部原始数据。没有声称 macOS、其他 Python 版本或设备安全验证通过。
 

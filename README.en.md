@@ -1,7 +1,7 @@
 # PEM water electrolysis: load-transfer prediction audit
 
 JIN HANZHE · Independent Researcher, Chongqing, China  
-GRC_LoadTransfer_01 · Local release candidate 1.0.0-rc.1 · 2026-10-22  
+GRC_LoadTransfer_01 · Release 1.0.0 · 2026-10-22  
 [中文](README.md) · [Reproduction](REPRODUCING.md) · [Validation](VALIDATION.md)
 
 This retrospective case study asks whether high-load anode outlet hydrogen concentration predicts the subsequent low-load concentration in long-term PEM water electrolysis. It uses the fixed [Zenodo 19361280 dataset](https://doi.org/10.5281/zenodo.19361280), with 547 paired cycles across four main membrane electrode assemblies (MEAs), one per configuration.
@@ -35,5 +35,5 @@ Author/contact: JIN HANZHE, jinhanzhe09@gmail.com. OpenAI Codex assisted source 
 
 Original software: MIT. Project documentation, figures and derived tables: CC BY 4.0, subject to retained upstream attribution. The experimental data are by Steffen Brundiers and the associated study authors, not by the reanalysis author. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md), [LICENSING.md](LICENSING.md) and [CITATION.cff](CITATION.cff).
 
-Please cite this reanalysis, the [fixed dataset](https://doi.org/10.5281/zenodo.19361280), and the [associated paper](https://doi.org/10.1039/D6EY00106H). This local candidate is not yet published and has no public repository URL or project DOI.
+Please cite this reanalysis, the [fixed dataset](https://doi.org/10.5281/zenodo.19361280), and the [associated paper](https://doi.org/10.1039/D6EY00106H). Repository: [SHIN09-git/pem-load-transfer-audit](https://github.com/SHIN09-git/pem-load-transfer-audit). Release: [v1.0.0](https://github.com/SHIN09-git/pem-load-transfer-audit/releases/tag/v1.0.0). No project DOI has been assigned.
 
