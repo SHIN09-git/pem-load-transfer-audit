@@ -1,0 +1,333 @@
+{
+  "date": "2026-10-22",
+  "scope": "Targeted exponential sensitivity rerun on the same frozen input, with two explicitly selected Linux math-library paths. Other result files were copied, not refitted in this targeted check.",
+  "triggering_cloud_run": "https://github.com/SHIN09-git/pem-load-transfer-audit/actions/runs/39730107439",
+  "limits": "The first cloud failure did not retain row values or CPU identity. These controlled local runs reproduce the same class of R2 mismatch; they do not identify that cloud runner's hardware.",
+  "variants": [
+    {
+      "settings": {
+        "OPENBLAS_CORETYPE": "Haswell"
+      },
+      "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+      "numpy": "2.3.5",
+      "pandas": "3.0.1",
+      "strict_mismatch_count": 42,
+      "mismatched_columns": [
+        "exp_r2"
+      ],
+      "largest_difference": {
+        "file": "exponential_window_sensitivity.csv",
+        "column": "exp_r2",
+        "row": 473,
+        "key": {
+          "mea": "PtNano",
+          "cycle": 21,
+          "start_min": 60
+        },
+        "expected": 0.0006852654742093,
+        "actual": 0.0006852666606302,
+        "absolute_difference": 1.1864208999999917e-09,
+        "direct_residual_r2": 0.0006852680583920856,
+        "sum_squared_deviations": 1.2392849600000847e-06
+      },
+      "all_column_summaries": [
+        {
+          "file": "exponential_window_sensitivity.csv",
+          "column": "cycle",
+          "max_abs_difference": 0.0,
+          "mismatches": 0
+        },
+        {
+          "file": "exponential_window_sensitivity.csv",
+          "column": "time_h",
+          "max_abs_difference": 0.0,
+          "mismatches": 0
+        },
+        {
+          "file": "exponential_window_sensitivity.csv",
+          "column": "start_min",
+          "max_abs_difference": 0.0,
+          "mismatches": 0
+        },
+        {
+          "file": "exponential_window_sensitivity.csv",
+          "column": "exp_c",
+          "max_abs_difference": 1.1768586105631584e-11,
+          "mismatches": 0
+        },
+        {
+          "file": "exponential_window_sensitivity.csv",
+          "column": "exp_amplitude",
+          "max_abs_difference": 1.1837197888553419e-11,
+          "mismatches": 0
+        },
+        {
+          "file": "exponential_window_sensitivity.csv",
+          "column": "exp_tau_h",
+          "max_abs_difference": 4.440892098500626e-16,
+          "mismatches": 0
+        },
+        {
+          "file": "exponential_window_sensitivity.csv",
+          "column": "exp_tau_low_h",
+          "max_abs_difference": 1.1102230246251565e-16,
+          "mismatches": 0
+        },
+        {
+          "file": "exponential_window_sensitivity.csv",
+          "column": "exp_tau_high_h",
+          "max_abs_difference": 4.440892098500626e-16,
+          "mismatches": 0
+        },
+        {
+          "file": "exponential_window_sensitivity.csv",
+          "column": "exp_c_low",
+          "max_abs_difference": 1.1768586105631584e-11,
+          "mismatches": 0
+        },
+        {
+          "file": "exponential_window_sensitivity.csv",
+          "column": "exp_c_high",
+          "max_abs_difference": 1.1102230246251565e-15,
+          "mismatches": 0
+        },
+        {
+          "file": "exponential_window_sensitivity.csv",
+          "column": "exp_rmse",
+          "max_abs_difference": 3.514000071827561e-13,
+          "mismatches": 0
+        },
+        {
+          "file": "exponential_window_sensitivity.csv",
+          "column": "exp_r2",
+          "max_abs_difference": 1.1864208999999917e-09,
+          "mismatches": 42
+        },
+        {
+          "file": "exponential_window_sensitivity.csv",
+          "column": "exp_n",
+          "max_abs_difference": 0.0,
+          "mismatches": 0
+        },
+        {
+          "file": "exponential_window_sensitivity.csv",
+          "column": "exp_observed_span_h",
+          "max_abs_difference": 0.0,
+          "mismatches": 0
+        },
+        {
+          "file": "exponential_window_sensitivity.csv",
+          "column": "exp_profile_ratio",
+          "max_abs_difference": 2.6645352591003757e-15,
+          "mismatches": 0
+        },
+        {
+          "file": "high_internal_forecast.csv",
+          "column": "cycle",
+          "max_abs_difference": 0.0,
+          "mismatches": 0
+        },
+        {
+          "file": "high_internal_forecast.csv",
+          "column": "time_h",
+          "max_abs_difference": 0.0,
+          "mismatches": 0
+        },
+        {
+          "file": "high_internal_forecast.csv",
+          "column": "exp_mae",
+          "max_abs_difference": 1.9012569296705806e-15,
+          "mismatches": 0
+        },
+        {
+          "file": "high_internal_forecast.csv",
+          "column": "last_high_mae",
+          "max_abs_difference": 0.0,
+          "mismatches": 0
+        },
+        {
+          "file": "high_internal_forecast.csv",
+          "column": "early_exp_c",
+          "max_abs_difference": 4.499981116901086e-15,
+          "mismatches": 0
+        },
+        {
+          "file": "high_internal_forecast.csv",
+          "column": "early_exp_tau_h",
+          "max_abs_difference": 4.440892098500626e-16,
+          "mismatches": 0
+        }
+      ],
+      "labels_and_discrete_decisions_equal": true
+    },
+    {
+      "settings": {
+        "OPENBLAS_CORETYPE": "Sandybridge",
+        "NPY_DISABLE_CPU_FEATURES": "AVX512F,AVX2,FMA3"
+      },
+      "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+      "numpy": "2.3.5",
+      "pandas": "3.0.1",
+      "strict_mismatch_count": 46,
+      "mismatched_columns": [
+        "exp_r2"
+      ],
+      "largest_difference": {
+        "file": "exponential_window_sensitivity.csv",
+        "column": "exp_r2",
+        "row": 662,
+        "key": {
+          "mea": "PtNano",
+          "cycle": 84,
+          "start_min": 60
+        },
+        "expected": 0.3532197722896161,
+        "actual": 0.3532197734547281,
+        "absolute_difference": 1.1651120068734144e-09,
+        "direct_residual_r2": 0.35321977519334324,
+        "sum_squared_deviations": 1.9772458461537335e-06
+      },
+      "all_column_summaries": [
+        {
+          "file": "exponential_window_sensitivity.csv",
+          "column": "cycle",
+          "max_abs_difference": 0.0,
+          "mismatches": 0
+        },
+        {
+          "file": "exponential_window_sensitivity.csv",
+          "column": "time_h",
+          "max_abs_difference": 0.0,
+          "mismatches": 0
+        },
+        {
+          "file": "exponential_window_sensitivity.csv",
+          "column": "start_min",
+          "max_abs_difference": 0.0,
+          "mismatches": 0
+        },
+        {
+          "file": "exponential_window_sensitivity.csv",
+          "column": "exp_c",
+          "max_abs_difference": 1.1768586105631584e-11,
+          "mismatches": 0
+        },
+        {
+          "file": "exponential_window_sensitivity.csv",
+          "column": "exp_amplitude",
+          "max_abs_difference": 1.1837197888553419e-11,
+          "mismatches": 0
+        },
+        {
+          "file": "exponential_window_sensitivity.csv",
+          "column": "exp_tau_h",
+          "max_abs_difference": 0.0,
+          "mismatches": 0
+        },
+        {
+          "file": "exponential_window_sensitivity.csv",
+          "column": "exp_tau_low_h",
+          "max_abs_difference": 0.0,
+          "mismatches": 0
+        },
+        {
+          "file": "exponential_window_sensitivity.csv",
+          "column": "exp_tau_high_h",
+          "max_abs_difference": 0.0,
+          "mismatches": 0
+        },
+        {
+          "file": "exponential_window_sensitivity.csv",
+          "column": "exp_c_low",
+          "max_abs_difference": 1.1768586105631584e-11,
+          "mismatches": 0
+        },
+        {
+          "file": "exponential_window_sensitivity.csv",
+          "column": "exp_c_high",
+          "max_abs_difference": 2.3314683517128287e-15,
+          "mismatches": 0
+        },
+        {
+          "file": "exponential_window_sensitivity.csv",
+          "column": "exp_rmse",
+          "max_abs_difference": 6.397999534682453e-13,
+          "mismatches": 0
+        },
+        {
+          "file": "exponential_window_sensitivity.csv",
+          "column": "exp_r2",
+          "max_abs_difference": 1.1651120068734144e-09,
+          "mismatches": 46
+        },
+        {
+          "file": "exponential_window_sensitivity.csv",
+          "column": "exp_n",
+          "max_abs_difference": 0.0,
+          "mismatches": 0
+        },
+        {
+          "file": "exponential_window_sensitivity.csv",
+          "column": "exp_observed_span_h",
+          "max_abs_difference": 0.0,
+          "mismatches": 0
+        },
+        {
+          "file": "exponential_window_sensitivity.csv",
+          "column": "exp_profile_ratio",
+          "max_abs_difference": 0.0,
+          "mismatches": 0
+        },
+        {
+          "file": "high_internal_forecast.csv",
+          "column": "cycle",
+          "max_abs_difference": 0.0,
+          "mismatches": 0
+        },
+        {
+          "file": "high_internal_forecast.csv",
+          "column": "time_h",
+          "max_abs_difference": 0.0,
+          "mismatches": 0
+        },
+        {
+          "file": "high_internal_forecast.csv",
+          "column": "exp_mae",
+          "max_abs_difference": 2.7000970903579002e-15,
+          "mismatches": 0
+        },
+        {
+          "file": "high_internal_forecast.csv",
+          "column": "last_high_mae",
+          "max_abs_difference": 0.0,
+          "mismatches": 0
+        },
+        {
+          "file": "high_internal_forecast.csv",
+          "column": "early_exp_c",
+          "max_abs_difference": 5.200050459674976e-15,
+          "mismatches": 0
+        },
+        {
+          "file": "high_internal_forecast.csv",
+          "column": "early_exp_tau_h",
+          "max_abs_difference": 0.0,
+          "mismatches": 0
+        }
+      ],
+      "labels_and_discrete_decisions_equal": true
+    }
+  ],
+  "policy": {
+    "default_rtol": 1e-09,
+    "default_atol": 1e-12,
+    "exp_r2_atol": 1e-08,
+    "exp_r2_tables": [
+      "02_processed/cycles.csv",
+      "04_results/exponential_fits.csv",
+      "04_results/exponential_window_sensitivity.csv"
+    ],
+    "all_other_columns": "Unchanged tolerance, labels, shape, and missing-value checks."
+  },
+  "reason": "Expanded SSE subtracts similar terms; division by a small within-window sum of squared deviations amplifies backend rounding. This is a bounded comparison allowance for derived dimensionless R2, not a rewrite of coefficients, predictions, or frozen research results."
+}

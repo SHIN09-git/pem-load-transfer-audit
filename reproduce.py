@@ -21,6 +21,10 @@ ROOT = Path(__file__).resolve().parent
 ARCHIVE = "pem_water_electrolysis_degradation_data.zip"
 ANALYSIS = ["analyze.py", "reproduce_proposal.py", "robustness.py",
             "history_sensitivity.py", "summarize.py", "figures.py"]
+EXPONENTIAL_R2_TABLES = {
+    "02_processed/cycles.csv", "04_results/exponential_fits.csv",
+    "04_results/exponential_window_sensitivity.csv",
+}
 
 def digest(path, algorithm="sha256"):
     h = hashlib.new(algorithm)
@@ -185,11 +189,15 @@ def compare_tables(reference, work):
             raise ValueError("Table shape/header mismatch: " + str(relative))
         n_numeric = 0
         max_abs = 0.0
+        tolerance_overrides = []
         for col in left:
             a, b = left[col], right[col]
             if pd.api.types.is_numeric_dtype(a) and pd.api.types.is_numeric_dtype(b) and not pd.api.types.is_bool_dtype(a):
                 aa, bb = a.to_numpy(dtype=float), b.to_numpy(dtype=float)
-                close = np.isclose(aa, bb, rtol=1e-9, atol=1e-12, equal_nan=True)
+                # Expanded SSE loses digits when divided by small within-window variance.
+                # Keep all fit parameters/predictions strict; only this derived R² has an absolute floor.
+                atol = 1e-8 if col == "exp_r2" and relative.as_posix() in EXPONENTIAL_R2_TABLES else 1e-12
+                close = np.isclose(aa, bb, rtol=1e-9, atol=atol, equal_nan=True)
                 if not close.all():
                     bad = np.flatnonzero(~close)
                     differences = np.abs(aa[bad] - bb[bad])
@@ -204,11 +212,16 @@ def compare_tables(reference, work):
                 finite = np.isfinite(aa) & np.isfinite(bb)
                 if finite.any():
                     max_abs = max(max_abs, float(np.max(np.abs(aa[finite] - bb[finite]))))
+                if atol != 1e-12:
+                    tolerance_overrides.append({
+                        "column": col, "atol": atol,
+                        "max_absolute_difference": float(np.max(np.abs(aa[finite] - bb[finite]))) if finite.any() else 0.0})
                 n_numeric += int(finite.sum())
             elif a.fillna("<NA>").astype(str).tolist() != b.fillna("<NA>").astype(str).tolist():
                 raise ValueError("Label mismatch: " + str(relative) + "/" + col)
         results.append({"path": relative.as_posix(), "rows": len(left), "columns": len(left.columns),
-                        "finite_numeric_cells": n_numeric, "max_absolute_difference": max_abs})
+                        "finite_numeric_cells": n_numeric, "max_absolute_difference": max_abs,
+                        "absolute_tolerance_overrides": tolerance_overrides})
     if numeric_mismatches:
         raise ValueError("Numeric mismatches: " + json.dumps(numeric_mismatches, ensure_ascii=False))
     def compare_json(a, b, where):
@@ -233,6 +246,7 @@ def compare_tables(reference, work):
         compare_json(json.loads(file.read_text(encoding="utf-8")), json.loads(other.read_text(encoding="utf-8")), file.name)
         json_files.append(file.name)
     return {"csv_files": results, "json_files": json_files, "rtol": 1e-9, "atol": 1e-12,
+            "exp_r2_atol": 1e-8, "exp_r2_tables": sorted(EXPONENTIAL_R2_TABLES),
             "note": "Analysis mode copies extraction-dependent tables; full mode regenerates all compared tables."}
 
 def main():

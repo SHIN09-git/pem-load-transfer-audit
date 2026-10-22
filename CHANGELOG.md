@@ -4,7 +4,7 @@
 
 首次正式发布 GRC_LoadTransfer_01 的独立复现包。
 
-正式发布仅更新版本、公共仓库与引用入口、文档状态及包清单；原分析算法、59 个冻结研究文件及研究结论保持不变。
+正式发布补齐版本、公共仓库与引用入口、文档状态及包清单，并修复不同数学库末位差异导致的指数拟合 R² 比对误报。仅为三张表的 `exp_r2` 设置 `1e-8` 绝对容差，新增 7 项比对回归检查和具体差值诊断。原分析算法、59 个冻结研究文件及研究结论保持不变。
 
 仓库：[pem-load-transfer-audit](https://github.com/SHIN09-git/pem-load-transfer-audit)；版本：[v1.0.0](https://github.com/SHIN09-git/pem-load-transfer-audit/releases/tag/v1.0.0)。
 
