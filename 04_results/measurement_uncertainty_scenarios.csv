@@ -1,0 +1,5 @@
+mea,low_correction_factor_median,low_bias_corrected_pp,raw_equivalent_bias_pp,raw_equivalent_bias_ppm,high_tail_sd_median,low_tail_sd_median,note
+PtBlack,6.986338610248846,0.04784943400553188,0.006849000123660987,68.49000123660987,0.0009306244197778001,0.00152145801931085,"equivalent additive low-channel drift scenario, not measured instrument uncertainty"
+PtC,7.007938148272929,0.051859659545877144,0.007400130887093758,74.00130887093758,0.0013683844142459,0.00043025674880605,"equivalent additive low-channel drift scenario, not measured instrument uncertainty"
+PtNano,6.8991641617513615,-0.00369671333286703,-0.0005358204626237817,-5.358204626237817,0.0009334289887344999,0.003470782853937,"equivalent additive low-channel drift scenario, not measured instrument uncertainty"
+Reference,6.602401563612853,0.2945512549661595,0.044612744639691414,446.12744639691414,0.0062882215256592,0.02051324380476395,"equivalent additive low-channel drift scenario, not measured instrument uncertainty"

@@ -1,0 +1,49 @@
+{
+  "pairs_per_window": "{('PtBlack', 30): 136, ('PtBlack', 60): 136, ('PtC', 30): 137, ('PtC', 60): 137, ('PtNano', 30): 137, ('PtNano', 60): 137, ('Reference', 30): 137, ('Reference', 60): 137}",
+  "excluded": [
+    {
+      "mea": "PtC",
+      "high_counter": 110,
+      "high_segment": 669,
+      "low_segment": 671,
+      "reason": "no_high_gc"
+    },
+    {
+      "mea": "PtNano",
+      "high_counter": 137,
+      "high_segment": 842,
+      "low_segment": 844,
+      "reason": "no_high_gc"
+    },
+    {
+      "mea": "Reference",
+      "high_counter": 109,
+      "high_segment": 663,
+      "low_segment": 665,
+      "reason": "no_high_gc"
+    },
+    {
+      "mea": "PtBlack",
+      "high_counter": 57,
+      "high_segment": 353,
+      "low_segment": 355,
+      "reason": "no_high_gc"
+    },
+    {
+      "mea": "PtBlack",
+      "high_counter": 137,
+      "high_segment": 842,
+      "low_segment": 844,
+      "reason": "no_high_gc"
+    }
+  ],
+  "median_gap_h": 5.043249999999944,
+  "future_feature_violations": 0,
+  "low_before_forecast_violations": 0,
+  "GC_interval_s": {
+    "PtBlack": 140.0,
+    "PtC": 142.0,
+    "PtNano": 140.0,
+    "Reference": 142.0
+  }
+}

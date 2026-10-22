@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.py[cod]
+reproductions/
+verification-output/
+01_raw/*.zip
+01_raw/*.part
+02_processed/ocv_observations.csv
+.DS_Store
+Thumbs.db
+

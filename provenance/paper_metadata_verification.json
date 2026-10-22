@@ -1,0 +1,43 @@
+{
+  "checked_date": "2026-10-22",
+  "source": "https://api.crossref.org/works/10.1039/D6EY00106H",
+  "title": [
+    "Time-resolved performance and stability of different gas recombination catalysts in PEM water electrolysis"
+  ],
+  "DOI": "10.1039/d6ey00106h",
+  "authors": [
+    {
+      "given": "Steffen",
+      "family": "Brundiers"
+    },
+    {
+      "given": "Patrick",
+      "family": "Trinke"
+    },
+    {
+      "given": "Simon",
+      "family": "Geiger"
+    },
+    {
+      "given": "Victor-Alfonso",
+      "family": "Gracia-Medrano-Bravo"
+    },
+    {
+      "given": "Marek",
+      "family": "Hubka"
+    },
+    {
+      "given": "Jan",
+      "family": "Ilsemann"
+    },
+    {
+      "given": "Boris",
+      "family": "Bensmann"
+    },
+    {
+      "given": "Richard",
+      "family": "Hanke-Rauschenbach"
+    }
+  ],
+  "scope": "Bibliographic metadata only; not a new full-text or SI review."
+}

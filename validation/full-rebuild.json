@@ -1,0 +1,722 @@
+{
+  "status": "passed",
+  "mode": "full",
+  "started_at_utc": "2026-10-22T05:10:28.529639+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "packages": {
+    "numpy": "2.3.5",
+    "pandas": "3.0.1",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2"
+  },
+  "manifest_files": 65,
+  "frozen_files": 59,
+  "external_peer_review": false,
+  "raw_archive": {
+    "filename": "pem_water_electrolysis_degradation_data.zip",
+    "bytes": 199357168,
+    "md5": "b161b3a2eb0d655266bd13618da386a7",
+    "sha256": "ef15233374ece3af33a3f876a80d8a7c38c965dff122b884c6ebd39f391952e4"
+  },
+  "steps": [
+    {
+      "script": "03_analysis/extract.py",
+      "exit_code": 0,
+      "seconds": 32.14,
+      "log": "extract.py.log"
+    },
+    {
+      "script": "03_analysis/features.py",
+      "exit_code": 0,
+      "seconds": 7.11,
+      "log": "features.py.log"
+    },
+    {
+      "script": "03_analysis/analyze.py",
+      "exit_code": 0,
+      "seconds": 65.656,
+      "log": "analyze.py.log"
+    },
+    {
+      "script": "03_analysis/reproduce_proposal.py",
+      "exit_code": 0,
+      "seconds": 1.156,
+      "log": "reproduce_proposal.py.log"
+    },
+    {
+      "script": "03_analysis/robustness.py",
+      "exit_code": 0,
+      "seconds": 5.375,
+      "log": "robustness.py.log"
+    },
+    {
+      "script": "03_analysis/history_sensitivity.py",
+      "exit_code": 0,
+      "seconds": 1.281,
+      "log": "history_sensitivity.py.log"
+    },
+    {
+      "script": "03_analysis/summarize.py",
+      "exit_code": 0,
+      "seconds": 1.329,
+      "log": "summarize.py.log"
+    },
+    {
+      "script": "03_analysis/figures.py",
+      "exit_code": 0,
+      "seconds": 3.281,
+      "log": "figures.py.log"
+    },
+    {
+      "script": "tests/test_causality.py",
+      "exit_code": 0,
+      "seconds": 3.781,
+      "log": "causality.log"
+    },
+    {
+      "script": "03_analysis/independent_audit.py",
+      "exit_code": 0,
+      "seconds": 40.453,
+      "log": "independent_raw_audit.log"
+    }
+  ],
+  "comparison": {
+    "csv_files": [
+      {
+        "path": "02_processed/characterization_tails.csv",
+        "rows": 448,
+        "columns": 21,
+        "finite_numeric_cells": 8946,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "path": "02_processed/cycles.csv",
+        "rows": 1094,
+        "columns": 74,
+        "finite_numeric_cells": 74189,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "path": "02_processed/gc_observations.csv",
+        "rows": 119198,
+        "columns": 16,
+        "finite_numeric_cells": 1294868,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "path": "02_processed/stages.csv",
+        "rows": 3396,
+        "columns": 10,
+        "finite_numeric_cells": 27168,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "path": "04_results/common_evaluation_cycles_scores.csv",
+        "rows": 288,
+        "columns": 11,
+        "finite_numeric_cells": 2304,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "path": "04_results/cycles_without_immediate_OCV.csv",
+        "rows": 10,
+        "columns": 6,
+        "finite_numeric_cells": 50,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "path": "04_results/exponential_fits.csv",
+        "rows": 547,
+        "columns": 18,
+        "finite_numeric_cells": 7646,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "path": "04_results/exponential_profiles.csv",
+        "rows": 131586,
+        "columns": 8,
+        "finite_numeric_cells": 789516,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "path": "04_results/exponential_sensitivity_summary.csv",
+        "rows": 12,
+        "columns": 7,
+        "finite_numeric_cells": 72,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "path": "04_results/exponential_window_sensitivity.csv",
+        "rows": 1641,
+        "columns": 19,
+        "finite_numeric_cells": 24579,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "path": "04_results/frozen_block_comparisons.csv",
+        "rows": 240,
+        "columns": 15,
+        "finite_numeric_cells": 2640,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "path": "04_results/frozen_predictions.csv",
+        "rows": 19292,
+        "columns": 14,
+        "finite_numeric_cells": 135044,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "path": "04_results/frozen_scores.csv",
+        "rows": 5616,
+        "columns": 13,
+        "finite_numeric_cells": 38792,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "path": "04_results/high_internal_forecast.csv",
+        "rows": 546,
+        "columns": 8,
+        "finite_numeric_cells": 3276,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "path": "04_results/history_sensitivity_scores.csv",
+        "rows": 240,
+        "columns": 12,
+        "finite_numeric_cells": 1920,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "path": "04_results/load_growth_factors.csv",
+        "rows": 16,
+        "columns": 10,
+        "finite_numeric_cells": 144,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "path": "04_results/measurement_uncertainty_scenarios.csv",
+        "rows": 4,
+        "columns": 8,
+        "finite_numeric_cells": 24,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "path": "04_results/online_label_schedule.csv",
+        "rows": 280,
+        "columns": 7,
+        "finite_numeric_cells": 1400,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "path": "04_results/online_predictions.csv",
+        "rows": 23856,
+        "columns": 18,
+        "finite_numeric_cells": 262416,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "path": "04_results/online_scores.csv",
+        "rows": 5184,
+        "columns": 15,
+        "finite_numeric_cells": 46176,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "path": "04_results/pair_exclusions.csv",
+        "rows": 5,
+        "columns": 5,
+        "finite_numeric_cells": 15,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "path": "04_results/paired_block_comparisons.csv",
+        "rows": 672,
+        "columns": 18,
+        "finite_numeric_cells": 8736,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "path": "04_results/phase_sensitivity_predictions.csv",
+        "rows": 65520,
+        "columns": 18,
+        "finite_numeric_cells": 720720,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "path": "04_results/phase_sensitivity_scores.csv",
+        "rows": 12960,
+        "columns": 15,
+        "finite_numeric_cells": 116640,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "path": "04_results/phase_sensitivity_summary.csv",
+        "rows": 24,
+        "columns": 6,
+        "finite_numeric_cells": 96,
+        "max_absolute_difference": 0.0
+      },
+      {
+        "path": "04_results/proposal_reproduction.csv",
+        "rows": 128,
+        "columns": 13,
+        "finite_numeric_cells": 1280,
+        "max_absolute_difference": 0.0
+      }
+    ],
+    "json_files": [
+      "frozen_coefficients.json",
+      "independent_raw_audit.json",
+      "pairing_audit.json",
+      "raw_audit.json"
+    ],
+    "rtol": 1e-09,
+    "atol": 1e-12,
+    "note": "Analysis mode copies extraction-dependent tables; full mode regenerates all compared tables."
+  },
+  "audit": {
+    "cycle_rows": 1094,
+    "pairs_per_window": 547,
+    "counts": {
+      "PtC/30": 137,
+      "PtC/60": 137,
+      "PtNano/30": 137,
+      "PtNano/60": 137,
+      "Reference/30": 137,
+      "Reference/60": 137,
+      "PtBlack/30": 136,
+      "PtBlack/60": 136
+    },
+    "score_rows_recomputed": 23760,
+    "equal_budget_prediction_slots": 14896,
+    "ptc_results": {
+      "frozen/primary/median": {
+        "n": 70,
+        "mae": 0.050742192857142855,
+        "bias": -0.050742192857142855,
+        "rmse": 0.05401064114753552,
+        "mdare_pct": 35.3086027152605,
+        "underprediction_fraction": 1.0
+      },
+      "frozen/primary/proportional": {
+        "n": 70,
+        "mae": 0.05362595984930834,
+        "bias": -0.05362595984930834,
+        "rmse": 0.056214293896825494,
+        "mdare_pct": 36.145765599948184,
+        "underprediction_fraction": 1.0
+      },
+      "frozen/primary/affine": {
+        "n": 70,
+        "mae": 0.050421182035054156,
+        "bias": -0.050421182035054156,
+        "rmse": 0.05367243299213132,
+        "mdare_pct": 35.20009646170965,
+        "underprediction_fraction": 1.0
+      },
+      "frozen/primary/time": {
+        "n": 70,
+        "mae": 0.027502422517153867,
+        "bias": -0.027502422517153867,
+        "rmse": 0.029997908362109024,
+        "mdare_pct": 19.03955979033242,
+        "underprediction_fraction": 1.0
+      },
+      "frozen/primary/time_high": {
+        "n": 70,
+        "mae": 0.02810754922344659,
+        "bias": -0.02810754922344659,
+        "rmse": 0.030456095826034126,
+        "mdare_pct": 19.08341113380191,
+        "underprediction_fraction": 1.0
+      },
+      "frozen/primary/high_slope": {
+        "n": 70,
+        "mae": 0.047051292092382124,
+        "bias": -0.047051292092382124,
+        "rmse": 0.05081612780483614,
+        "mdare_pct": 32.21358375685687,
+        "underprediction_fraction": 1.0
+      },
+      "frozen/primary/time_high_slope": {
+        "n": 70,
+        "mae": 0.02548976583692954,
+        "bias": -0.02548976583692954,
+        "rmse": 0.02762087697970279,
+        "mdare_pct": 16.812038733169516,
+        "underprediction_fraction": 1.0
+      },
+      "frozen/primary/time_ocv": {
+        "n": 70,
+        "mae": 0.027251320112692008,
+        "bias": -0.027251320112692008,
+        "rmse": 0.029652483407014013,
+        "mdare_pct": 18.520324496472522,
+        "underprediction_fraction": 1.0
+      },
+      "frozen/primary/high_ocv": {
+        "n": 70,
+        "mae": 0.03875947887713364,
+        "bias": -0.03875947887713364,
+        "rmse": 0.041755506497418354,
+        "mdare_pct": 27.34698708942249,
+        "underprediction_fraction": 1.0
+      },
+      "frozen/primary/time_high_history": {
+        "n": 70,
+        "mae": 0.026954824813444137,
+        "bias": -0.026954824813444137,
+        "rmse": 0.02916126840389459,
+        "mdare_pct": 18.329677547862232,
+        "underprediction_fraction": 1.0
+      },
+      "frozen/primary/odds_affine_nonnegative": {
+        "n": 70,
+        "mae": 0.050421067801768193,
+        "bias": -0.050421067801768193,
+        "rmse": 0.05367233897060162,
+        "mdare_pct": 35.19998154505,
+        "underprediction_fraction": 1.0
+      },
+      "frozen/primary/faradaic_equal_net_flux": {
+        "n": 70,
+        "mae": 0.08141839979619053,
+        "bias": 0.08141839979619053,
+        "rmse": 0.0851957977832471,
+        "mdare_pct": 57.14246670418848,
+        "underprediction_fraction": 0.0
+      },
+      "frozen/primary/exp_asymptote_affine": {
+        "n": 70,
+        "mae": 0.04814779723979689,
+        "bias": -0.04814779723979689,
+        "rmse": 0.05196225624500849,
+        "mdare_pct": 34.05655881582452,
+        "underprediction_fraction": 1.0
+      },
+      "frozen/all_early/median": {
+        "n": 70,
+        "mae": 0.05275269285714286,
+        "bias": -0.05275269285714286,
+        "rmse": 0.05590371924028337,
+        "mdare_pct": 36.673338547047535,
+        "underprediction_fraction": 1.0
+      },
+      "frozen/all_early/proportional": {
+        "n": 70,
+        "mae": 0.058212137455371224,
+        "bias": -0.058212137455371224,
+        "rmse": 0.06058197098256291,
+        "mdare_pct": 39.31447863769889,
+        "underprediction_fraction": 1.0
+      },
+      "frozen/all_early/affine": {
+        "n": 70,
+        "mae": 0.05835965634156289,
+        "bias": -0.05835965634156289,
+        "rmse": 0.06068176595908896,
+        "mdare_pct": 40.37977819524078,
+        "underprediction_fraction": 1.0
+      },
+      "frozen/all_early/time": {
+        "n": 70,
+        "mae": 0.004151557456173714,
+        "bias": 0.001921273679711696,
+        "rmse": 0.004797263230807271,
+        "mdare_pct": 3.3176341022681743,
+        "underprediction_fraction": 0.3
+      },
+      "frozen/all_early/time_high": {
+        "n": 70,
+        "mae": 0.01557124922503478,
+        "bias": -0.015564191376937661,
+        "rmse": 0.017532510663098,
+        "mdare_pct": 10.757869787539983,
+        "underprediction_fraction": 0.9857142857142858
+      },
+      "frozen/all_early/high_slope": {
+        "n": 70,
+        "mae": 0.058510672473555264,
+        "bias": -0.058510672473555264,
+        "rmse": 0.060818318709779016,
+        "mdare_pct": 40.59538286425563,
+        "underprediction_fraction": 1.0
+      },
+      "frozen/all_early/time_high_slope": {
+        "n": 70,
+        "mae": 0.013875413387720721,
+        "bias": -0.013875413387720721,
+        "rmse": 0.015219138445725405,
+        "mdare_pct": 9.861836099248308,
+        "underprediction_fraction": 1.0
+      },
+      "frozen/all_early/time_ocv": {
+        "n": 70,
+        "mae": 0.03532142652717097,
+        "bias": -0.03532142652717097,
+        "rmse": 0.03863711719523534,
+        "mdare_pct": 25.136663292312424,
+        "underprediction_fraction": 1.0
+      },
+      "frozen/all_early/high_ocv": {
+        "n": 70,
+        "mae": 0.03722835982431664,
+        "bias": -0.03722835982431664,
+        "rmse": 0.03981364204406076,
+        "mdare_pct": 26.113123190875292,
+        "underprediction_fraction": 1.0
+      },
+      "frozen/all_early/time_high_history": {
+        "n": 70,
+        "mae": 0.025721394621589316,
+        "bias": -0.025721394621589316,
+        "rmse": 0.027840439396907248,
+        "mdare_pct": 18.922613351057336,
+        "underprediction_fraction": 1.0
+      },
+      "frozen/all_early/odds_affine_nonnegative": {
+        "n": 70,
+        "mae": 0.05835831563472758,
+        "bias": -0.05835831563472758,
+        "rmse": 0.06068049867583671,
+        "mdare_pct": 40.37954613517499,
+        "underprediction_fraction": 1.0
+      },
+      "frozen/all_early/faradaic_equal_net_flux": {
+        "n": 70,
+        "mae": 0.08141839979619053,
+        "bias": 0.08141839979619053,
+        "rmse": 0.0851957977832471,
+        "mdare_pct": 57.14246670418848,
+        "underprediction_fraction": 0.0
+      },
+      "frozen/all_early/exp_asymptote_affine": {
+        "n": 70,
+        "mae": 0.06155207043480796,
+        "bias": -0.06155207043480796,
+        "rmse": 0.0637484267201574,
+        "mdare_pct": 41.74489065898045,
+        "underprediction_fraction": 1.0
+      },
+      "frozen/post_runin/median": {
+        "n": 45,
+        "mae": 0.0483387,
+        "bias": -0.0483387,
+        "rmse": 0.050139213956133064,
+        "mdare_pct": 29.477340840977206,
+        "underprediction_fraction": 1.0
+      },
+      "frozen/post_runin/proportional": {
+        "n": 45,
+        "mae": 0.04234790313105378,
+        "bias": -0.04234790313105378,
+        "rmse": 0.045113867183339644,
+        "mdare_pct": 29.62111600827393,
+        "underprediction_fraction": 1.0
+      },
+      "frozen/post_runin/affine": {
+        "n": 45,
+        "mae": 0.04813283750264556,
+        "bias": -0.04813283750264556,
+        "rmse": 0.04987650059259502,
+        "mdare_pct": 29.2894644791395,
+        "underprediction_fraction": 1.0
+      },
+      "frozen/post_runin/time": {
+        "n": 45,
+        "mae": 0.007296943637039944,
+        "bias": -0.006970476172781802,
+        "rmse": 0.008608527364637231,
+        "mdare_pct": 4.621221880212365,
+        "underprediction_fraction": 0.9333333333333333
+      },
+      "frozen/post_runin/time_high": {
+        "n": 45,
+        "mae": 0.008627221281125853,
+        "bias": -0.00842329757262454,
+        "rmse": 0.009947179056428411,
+        "mdare_pct": 5.344012298166265,
+        "underprediction_fraction": 0.9333333333333333
+      },
+      "frozen/post_runin/high_slope": {
+        "n": 45,
+        "mae": 0.04804722651093586,
+        "bias": -0.04804722651093586,
+        "rmse": 0.049682793517240344,
+        "mdare_pct": 28.771791948240445,
+        "underprediction_fraction": 1.0
+      },
+      "frozen/post_runin/time_high_slope": {
+        "n": 45,
+        "mae": 0.008875429149852863,
+        "bias": -0.008684752134111733,
+        "rmse": 0.010167757687879352,
+        "mdare_pct": 5.707375172306711,
+        "underprediction_fraction": 0.9333333333333333
+      },
+      "frozen/post_runin/time_ocv": {
+        "n": 45,
+        "mae": 0.007583995679518962,
+        "bias": -0.007311083922336228,
+        "rmse": 0.008937458364342602,
+        "mdare_pct": 4.606679300186626,
+        "underprediction_fraction": 0.9333333333333333
+      },
+      "frozen/post_runin/high_ocv": {
+        "n": 45,
+        "mae": 0.035414474923386736,
+        "bias": -0.035414474923386736,
+        "rmse": 0.036719321681952875,
+        "mdare_pct": 23.349298156258644,
+        "underprediction_fraction": 1.0
+      },
+      "frozen/post_runin/time_high_history": {
+        "n": 45,
+        "mae": 0.007604825254183095,
+        "bias": -0.007329951418155424,
+        "rmse": 0.008955747112244,
+        "mdare_pct": 4.585198168082687,
+        "underprediction_fraction": 0.9333333333333333
+      },
+      "frozen/post_runin/odds_affine_nonnegative": {
+        "n": 45,
+        "mae": 0.0481325667979901,
+        "bias": -0.0481325667979901,
+        "rmse": 0.049876245104911524,
+        "mdare_pct": 29.289300005625364,
+        "underprediction_fraction": 1.0
+      },
+      "frozen/post_runin/faradaic_equal_net_flux": {
+        "n": 45,
+        "mae": 0.07639840022592762,
+        "bias": 0.07639840022592762,
+        "rmse": 0.08090896111840873,
+        "mdare_pct": 43.27869715875113,
+        "underprediction_fraction": 0.0
+      },
+      "frozen/post_runin/exp_asymptote_affine": {
+        "n": 45,
+        "mae": 0.05043642452648503,
+        "bias": -0.05043642452648503,
+        "rmse": 0.052780677837969955,
+        "mdare_pct": 29.529460208597552,
+        "underprediction_fraction": 1.0
+      },
+      "online/every10/last_label": {
+        "n": 63,
+        "mae": 0.005007198412698426,
+        "bias": -0.004998373015873029,
+        "rmse": 0.0061901243708176595,
+        "mdare_pct": 2.9286735314644834,
+        "underprediction_fraction": 0.9841269841269841
+      },
+      "online/every10/time_expanding": {
+        "n": 63,
+        "mae": 0.0075037446527279755,
+        "bias": -0.0075037446527279755,
+        "rmse": 0.00808214071974761,
+        "mdare_pct": 5.3740336744138775,
+        "underprediction_fraction": 1.0
+      },
+      "online/every10/time_recent8": {
+        "n": 63,
+        "mae": 0.0033964979212253387,
+        "bias": -0.002787866370770629,
+        "rmse": 0.004027754504182081,
+        "mdare_pct": 2.01741724234855,
+        "underprediction_fraction": 0.8571428571428571
+      },
+      "online/every10/affine_expanding": {
+        "n": 63,
+        "mae": 0.04386877346609136,
+        "bias": -0.04386877346609136,
+        "rmse": 0.04704652884948368,
+        "mdare_pct": 30.048102061789983,
+        "underprediction_fraction": 1.0
+      },
+      "online/every10/affine_offset_last": {
+        "n": 63,
+        "mae": 0.005057319955259185,
+        "bias": -0.005048800151127419,
+        "rmse": 0.006300670117516058,
+        "mdare_pct": 2.8235301846677996,
+        "underprediction_fraction": 0.9841269841269841
+      },
+      "online/every10/time_high_slope_expanding": {
+        "n": 63,
+        "mae": 0.005800116087136258,
+        "bias": -0.005489105349140913,
+        "rmse": 0.00646462035895799,
+        "mdare_pct": 4.256776255270145,
+        "underprediction_fraction": 0.8571428571428571
+      },
+      "online/every20/last_label": {
+        "n": 67,
+        "mae": 0.007854858208955217,
+        "bias": -0.007854858208955217,
+        "rmse": 0.009498778016262867,
+        "mdare_pct": 3.9368170726896654,
+        "underprediction_fraction": 1.0
+      },
+      "online/every20/time_expanding": {
+        "n": 67,
+        "mae": 0.00848887182307973,
+        "bias": -0.00848887182307973,
+        "rmse": 0.009055567776093554,
+        "mdare_pct": 5.407708540124119,
+        "underprediction_fraction": 1.0
+      },
+      "online/every20/time_recent8": {
+        "n": 67,
+        "mae": 0.00310030235102976,
+        "bias": -0.001940456341238235,
+        "rmse": 0.0034701168365584988,
+        "mdare_pct": 1.8215635831605022,
+        "underprediction_fraction": 0.8507462686567164
+      },
+      "online/every20/affine_expanding": {
+        "n": 67,
+        "mae": 0.04823742871815366,
+        "bias": -0.04823742871815366,
+        "rmse": 0.0516270329067578,
+        "mdare_pct": 31.5874542556872,
+        "underprediction_fraction": 1.0
+      },
+      "online/every20/affine_offset_last": {
+        "n": 67,
+        "mae": 0.007842083452173262,
+        "bias": -0.007842083452173262,
+        "rmse": 0.009536089316166133,
+        "mdare_pct": 3.6996715604394326,
+        "underprediction_fraction": 1.0
+      },
+      "online/every20/time_high_slope_expanding": {
+        "n": 67,
+        "mae": 0.006280305027204754,
+        "bias": -0.005106387875759825,
+        "rmse": 0.007061767811651581,
+        "mdare_pct": 3.984273884358051,
+        "underprediction_fraction": 0.8656716417910447
+      }
+    },
+    "scope": "Standard-library recalculation from bundled predictions, not model refitting or independent experiments."
+  },
+  "figure_files_generated": [
+    "01_PtC_frozen_predictions.png",
+    "01_PtC_frozen_predictions.svg",
+    "02_calibration_sensitivity.png",
+    "02_calibration_sensitivity.svg",
+    "03_sparse_recalibration.png",
+    "03_sparse_recalibration.svg",
+    "04_exponential_model_dependence.png",
+    "04_exponential_model_dependence.svg",
+    "05_reveal_offset_sensitivity.png",
+    "05_reveal_offset_sensitivity.svg",
+    "06_characterization_growth.png",
+    "06_characterization_growth.svg"
+  ],
+  "original_frozen_files_unchanged": 59,
+  "elapsed_seconds": 166.188,
+  "finished_at_utc": "2026-10-22T05:13:14.709468+00:00"
+}

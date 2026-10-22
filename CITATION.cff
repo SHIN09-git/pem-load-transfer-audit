@@ -1,0 +1,58 @@
+cff-version: 1.2.0
+message: "Please cite this local release candidate and the original dataset and paper. This reanalysis is not yet published."
+type: software
+title: "PEM water electrolysis load-transfer prediction and recalibration audit"
+version: "1.0.0-rc.1"
+authors:
+  - family-names: JIN
+    given-names: HANZHE
+    affiliation: "Independent Researcher, Chongqing, China"
+    email: jinhanzhe09@gmail.com
+license:
+  - MIT
+  - CC-BY-4.0
+abstract: >
+  Retrospective audit of high-to-low-load hydrogen-concentration prediction
+  in four long-term PEM water electrolysis trajectories. Compares frozen
+  mappings, time baselines and causally revealed low-load labels.
+  One primary MEA per configuration; no independent experimental validation.
+keywords:
+  - PEM water electrolysis
+  - gas recombination catalyst
+  - temporal validation
+  - recalibration
+  - reproducibility
+references:
+  - type: data
+    title: "Datasets: Time-Resolved Performance and Stability of Different Gas Recombination Catalysts in PEM Water Electrolysis"
+    authors:
+      - family-names: Brundiers
+        given-names: Steffen
+        orcid: "https://orcid.org/0009-0001-4385-2903"
+    doi: "10.5281/zenodo.19361280"
+    year: 2026
+    publisher:
+      name: Zenodo
+  - type: article
+    title: "Time-resolved performance and stability of different gas recombination catalysts in PEM water electrolysis"
+    authors:
+      - family-names: Brundiers
+        given-names: Steffen
+      - family-names: Trinke
+        given-names: Patrick
+      - family-names: Geiger
+        given-names: Simon
+      - family-names: Gracia-Medrano-Bravo
+        given-names: Victor-Alfonso
+      - family-names: Hubka
+        given-names: Marek
+      - family-names: Ilsemann
+        given-names: Jan
+      - family-names: Bensmann
+        given-names: Boris
+      - family-names: Hanke-Rauschenbach
+        given-names: Richard
+    doi: "10.1039/D6EY00106H"
+    journal: "EES Catalysis"
+    year: 2026
+

@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "cff_schema": "1.2.0",
+  "local_markdown_links_checked": 50,
+  "python_syntax_files": 12,
+  "text_files_scanned": 45,
+  "original_source_files_unchanged": 59,
+  "checks": [
+    "CFF 1.2 schema",
+    "Workflow structure and read-only permissions",
+    "Local document/image link targets",
+    "Python AST syntax",
+    "No oversized files",
+    "Targeted private-path/credential patterns",
+    "Original source hashes"
+  ],
+  "scope": "Targeted packaging checks; not an exhaustive security review."
+}

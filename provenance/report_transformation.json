@@ -1,0 +1,13 @@
+{
+  "source_project": "GRC_LoadTransfer_01",
+  "source_relative_path": "06_report/PEM水电解跨负载诊断公开数据研究报告.md",
+  "source_sha256": "518d7338d00c748e7ea5ef9e7f8cd45e50d5d50a42d1e60acdb616ca48af789c",
+  "public_relative_path": "06_report/中文研究报告.md",
+  "changes": [
+    "Authorship and AI disclosure added",
+    "Core result sections retained with relative figures",
+    "Private paths and conversation history removed",
+    "Historical literature scope explicitly bounded",
+    "Portable reproduction entry substituted"
+  ]
+}

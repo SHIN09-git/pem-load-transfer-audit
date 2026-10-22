@@ -1,0 +1,4 @@
+# Preserve frozen data/code bytes so manifests survive Git checkout on all OSes.
+* -text
+*.png binary
+

@@ -1,0 +1,118 @@
+{
+  "zip_md5": "b161b3a2eb0d655266bd13618da386a7",
+  "zip_bytes": 199357168,
+  "files": [
+    {
+      "mea": "PtC",
+      "raw_rows": 5906897,
+      "gc_rows": 29461,
+      "backward_timestamps": 0,
+      "repeated_timestamps": 212717,
+      "invalid_h2": 0,
+      "missing": {
+        "pressure_bar": 51184,
+        "temp_C": 6348,
+        "conductivity_uScm": 51184,
+        "h2": 5877436
+      },
+      "stage_counts": {
+        "CstC_12A": 138,
+        "GEIS_12A": 138,
+        "CstC_1A": 138,
+        "GEIS_1A": 138,
+        "CV_cycles": 133,
+        "OCV": 133,
+        "POL_GEIS": 16,
+        "H2_char": 8,
+        "pressure_build_up": 1,
+        "conditioning": 1
+      },
+      "last_h": 1505.0870833333333,
+      "identical_consecutive_gc": 32
+    },
+    {
+      "mea": "PtNano",
+      "raw_rows": 5948728,
+      "gc_rows": 29949,
+      "backward_timestamps": 0,
+      "repeated_timestamps": 192862,
+      "invalid_h2": 0,
+      "missing": {
+        "pressure_bar": 881594,
+        "temp_C": 6348,
+        "conductivity_uScm": 881590,
+        "h2": 5918779
+      },
+      "stage_counts": {
+        "CV_cycles": 138,
+        "OCV": 138,
+        "CstC_12A": 138,
+        "GEIS_12A": 138,
+        "CstC_1A": 138,
+        "GEIS_1A": 138,
+        "POL_GEIS": 16,
+        "H2_char": 8,
+        "pressure_build_up": 1,
+        "conditioning": 1
+      },
+      "last_h": 1515.0124444444443,
+      "identical_consecutive_gc": 65
+    },
+    {
+      "mea": "Reference",
+      "raw_rows": 5904798,
+      "gc_rows": 29739,
+      "backward_timestamps": 0,
+      "repeated_timestamps": 174145,
+      "invalid_h2": 0,
+      "missing": {
+        "pressure_bar": 50637,
+        "temp_C": 6348,
+        "conductivity_uScm": 50637,
+        "h2": 5875059
+      },
+      "stage_counts": {
+        "CstC_12A": 138,
+        "GEIS_12A": 138,
+        "CstC_1A": 138,
+        "GEIS_1A": 138,
+        "CV_cycles": 133,
+        "OCV": 133,
+        "POL_GEIS": 16,
+        "H2_char": 8,
+        "pressure_build_up": 1,
+        "conditioning": 1
+      },
+      "last_h": 1514.757861111111,
+      "identical_consecutive_gc": 0
+    },
+    {
+      "mea": "PtBlack",
+      "raw_rows": 6003898,
+      "gc_rows": 30049,
+      "backward_timestamps": 0,
+      "repeated_timestamps": 227239,
+      "invalid_h2": 0,
+      "missing": {
+        "pressure_bar": 885728,
+        "temp_C": 6348,
+        "conductivity_uScm": 885728,
+        "h2": 5973849
+      },
+      "stage_counts": {
+        "CV_cycles": 138,
+        "OCV": 138,
+        "CstC_12A": 138,
+        "GEIS_12A": 138,
+        "CstC_1A": 138,
+        "GEIS_1A": 138,
+        "POL_GEIS": 16,
+        "H2_char": 8,
+        "pressure_build_up": 1,
+        "conditioning": 1
+      },
+      "last_h": 1521.05575,
+      "identical_consecutive_gc": 120
+    }
+  ]
+}

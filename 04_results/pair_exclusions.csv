@@ -1,0 +1,6 @@
+mea,high_counter,high_segment,low_segment,reason
+PtC,110,669,671,no_high_gc
+PtNano,137,842,844,no_high_gc
+Reference,109,663,665,no_high_gc
+PtBlack,57,353,355,no_high_gc
+PtBlack,137,842,844,no_high_gc

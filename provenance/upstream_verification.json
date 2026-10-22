@@ -1,0 +1,23 @@
+{
+  "checked_at_utc": "2026-10-22T05:08:09.319005+00:00",
+  "record_url": "https://zenodo.org/records/19361280",
+  "metadata_url": "https://zenodo.org/api/records/19361280",
+  "doi": "10.5281/zenodo.19361280",
+  "title": "Datasets: Time-Resolved Performance and Stability of Different Gas Recombination Catalysts in PEM Water Electrolysis",
+  "creators": [
+    {
+      "name": "Brundiers, Steffen",
+      "affiliation": "Leibniz University Hannover",
+      "orcid": "0009-0001-4385-2903"
+    }
+  ],
+  "license": "cc-by-4.0",
+  "archive": {
+    "filename": "pem_water_electrolysis_degradation_data.zip",
+    "url": "https://zenodo.org/api/records/19361280/files/pem_water_electrolysis_degradation_data.zip/content",
+    "bytes": 199357168,
+    "md5": "b161b3a2eb0d655266bd13618da386a7",
+    "sha256": "ef15233374ece3af33a3f876a80d8a7c38c965dff122b884c6ebd39f391952e4"
+  },
+  "verification": "Live official metadata matched the locally cached archive size and official MD5; SHA-256 calculated locally."
+}

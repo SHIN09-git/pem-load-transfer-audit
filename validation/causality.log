@@ -1,0 +1,10 @@
+test_current_calibration_label_not_available_to_own_prediction (__main__.CausalityTests.test_current_calibration_label_not_available_to_own_prediction) ... ok
+test_equal_label_budgets_across_models (__main__.CausalityTests.test_equal_label_budgets_across_models) ... ok
+test_forecast_precedes_target_and_all_labels_are_past (__main__.CausalityTests.test_forecast_precedes_target_and_all_labels_are_past) ... ok
+test_future_metadata_not_used_as_features (__main__.CausalityTests.test_future_metadata_not_used_as_features) ... ok
+test_hidden_labels_cannot_change_predictions (__main__.CausalityTests.test_hidden_labels_cannot_change_predictions) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 2.746s
+
+OK

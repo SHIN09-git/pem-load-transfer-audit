@@ -1,0 +1,148 @@
+{
+  "conceptdoi": "10.5281/zenodo.19361279",
+  "conceptrecid": "19361279",
+  "created": "2026-04-01T15:51:18.328062+00:00",
+  "doi": "10.5281/zenodo.19361280",
+  "doi_url": "https://doi.org/10.5281/zenodo.19361280",
+  "files": [
+    {
+      "checksum": "md5:b161b3a2eb0d655266bd13618da386a7",
+      "id": "61d4f0be-8368-4fb8-aff0-b8c7b7fc96f1",
+      "key": "pem_water_electrolysis_degradation_data.zip",
+      "links": {
+        "self": "https://zenodo.org/api/records/19361280/files/pem_water_electrolysis_degradation_data.zip/content"
+      },
+      "size": 199357168
+    }
+  ],
+  "id": 19361280,
+  "links": {
+    "access": "https://zenodo.org/api/records/19361280/access",
+    "access_grants": "https://zenodo.org/api/records/19361280/access/grants",
+    "access_links": "https://zenodo.org/api/records/19361280/access/links",
+    "access_request": "https://zenodo.org/api/records/19361280/access/request",
+    "access_users": "https://zenodo.org/api/records/19361280/access/users",
+    "communities": "https://zenodo.org/api/records/19361280/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/19361280/communities-suggestions",
+    "doi": "https://doi.org/10.5281/zenodo.19361280",
+    "draft": "https://zenodo.org/api/records/19361280/draft",
+    "file_modification": "https://zenodo.org/api/records/19361280/file-modification",
+    "files": "https://zenodo.org/api/records/19361280/files",
+    "latest": "https://zenodo.org/api/records/19361280/versions/latest",
+    "latest_html": "https://zenodo.org/records/19361280/latest",
+    "media_files": "https://zenodo.org/api/records/19361280/media-files",
+    "parent": "https://zenodo.org/api/records/19361279",
+    "parent_doi": "https://doi.org/10.5281/zenodo.19361279",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.19361279",
+    "parent_html": "https://zenodo.org/records/19361279",
+    "preview_html": "https://zenodo.org/records/19361280?preview=1",
+    "quota_increase": "https://zenodo.org/api/records/19361280/quota-increase",
+    "request_deletion": "https://zenodo.org/api/records/19361280/request-deletion",
+    "requests": "https://zenodo.org/api/records/19361280/requests",
+    "reserve_doi": "https://zenodo.org/api/records/19361280/draft/pids/doi",
+    "self": "https://zenodo.org/api/records/19361280",
+    "self_doi": "https://doi.org/10.5281/zenodo.19361280",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.19361280",
+    "self_html": "https://zenodo.org/records/19361280",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:19361280/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:19361280/sequence/default",
+    "versions": "https://zenodo.org/api/records/19361280/versions"
+  },
+  "metadata": {
+    "access_right": "open",
+    "creators": [
+      {
+        "affiliation": "Leibniz University Hannover",
+        "name": "Brundiers, Steffen",
+        "orcid": "0009-0001-4385-2903"
+      }
+    ],
+    "custom": {
+      "code:developmentStatus": {
+        "id": "active",
+        "title": {
+          "en": "Active"
+        }
+      },
+      "code:programmingLanguage": [
+        {
+          "id": "python",
+          "title": {
+            "en": "Python"
+          }
+        }
+      ]
+    },
+    "description": "<h1>Dataset Documentation</h1>\n<p><strong>Dataset: Time-Resolved Performance and Stability of Gas Recombination Catalysts in PEM Water Electrolysis</strong></p>\n<h3><strong>Overview</strong></h3>\n<p>This dataset provides <strong>time-resolved electrochemical and gas analysis data under high-pressure conditions (30 bar absolute)</strong> from long-term (approximately 1500 hours) single-cell polymer electrolyte membrane water electrolysis (PEMWE) experiments.</p>\n<p>To facilitate direct use of the dataset, an accompanying <strong>Jupyter Notebook</strong> is provided, offering example workflows for data loading, filtering of measurement phases, and basic exploratory analysis.</p>\n<p>A key feature of this dataset is the <strong>combined investigation of gas recombination catalysts (GRC) and hydrogen crossover</strong> besides the electrochemical data, enabled by <strong>time-resolved gas chromatography measurements of hydrogen in oxygen content (H\u2082 in O\u2082) </strong>making this dataset especially valuable for studying degradation mechanisms, gas crossover behavior, and gas recombination catalyst performance.</p>\n<p>Four independent experiments are included:</p>\n<ul>\n<li>\n<p>Reference (no gas recombination catalyst)</p>\n</li>\n<li>\n<p>PtNano</p>\n</li>\n<li>\n<p>PtBlack</p>\n</li>\n<li>\n<p>Pt/C</p>\n</li>\n</ul>\n<p>Each experiment is provided as a separate CSV file with identical structure, enabling direct comparison across samples.</p>\n<p>The dataset is suitable for:</p>\n<ul>\n<li>\n<p>electrochemical performance analysis</p>\n</li>\n<li>\n<p>degradation and stability studies</p>\n</li>\n<li>\n<p>hydrogen crossover evaluation under pressure</p>\n</li>\n<li>\n<p>analysis of gas recombination catalyst performance</p>\n</li>\n<li>\n<p>impedance-based diagnostics</p>\n</li>\n<li>\n<p>data-driven modeling and machine learning applications</p>\n</li>\n</ul>\n<h3><strong>---------------------------------------------------------</strong></h3>\n<h3><strong>Experimental Setup (Short summary)</strong></h3>\n<ul>\n<li>\n<p>Single-cell PEM water electrolyzer (4 cm&sup2; active area)</p>\n</li>\n<li>\n<p>Membrane electrode assembly based on Nafion N115</p>\n</li>\n<li>\n<p>Cathode pressure: 30 bar absolute</p>\n</li>\n<li>\n<p>Water temperature: 80 &deg;C</p>\n</li>\n<li>\n<p>Long-term operation: ~1500 hours</p>\n</li>\n</ul>\n<p>Further details on materials, cell design, and experimental setup are provided in the accompanying documentation PDF file and the original publication.</p>\n<h3><strong>---------------------------------------------------------</strong></h3>\n<h3><strong>File Structure</strong></h3>\n<p>The dataset consists of four CSV files:</p>\n<ul>\n<li>\n<p>Each file corresponds to one sample (Reference, PtNano, PtBlack, Pt/C)</p>\n</li>\n<li>\n<p>All files share the same column structure</p>\n</li>\n<li>\n<p>Time is reported as elapsed time starting from the beginning of each individual experiment</p>\n</li>\n</ul>\n<p>General file format:</p>\n<ul>\n<li>\n<p>Encoding: UTF-8</p>\n</li>\n<li>\n<p>Delimiter: comma (,)</p>\n</li>\n<li>\n<p>Decimal separator: dot (.)</p>\n</li>\n</ul>\n<h3><strong>---------------------------------------------------------</strong></h3>\n<h3><strong>Data Content</strong></h3>\n<p>The dataset combines multiple types of measurements:</p>\n<ul>\n<li>\n<p>Cell performance data (current, voltage)</p>\n</li>\n<li>\n<p>Electrochemical impedance spectroscopy (EIS)</p>\n</li>\n<li>\n<p>Gas chromatography (GC) measurements of hydrogen in oxygen</p>\n</li>\n<li>\n<p>Auxiliary measurements (temperature, pressure, water conductivity)</p>\n</li>\n<li>\n<p>Measurement protocol identifiers</p>\n</li>\n</ul>\n<p>Due to the combination of different measurement systems, the dataset contains variables with different sampling rates.</p>\n<h3><strong>---------------------------------------------------------</strong></h3>\n<h3><strong>Column Description</strong></h3>\n<p>The following columns are included in each dataset:</p>\n<ul>\n<li>\n<p><strong>elapsed_time_s</strong><br>Overall measurement time in seconds. Time starts at 0 for each dataset.</p>\n</li>\n<li>\n<p><strong>Temp_degC</strong><br>Cell block temperature in &deg;C (measured via Pt100 sensor).<br>Note: This signal may contain occasional irregularities and measurement artifacts.</p>\n</li>\n<li>\n<p><strong>I_mA</strong><br>Applied electrical current in mA.</p>\n</li>\n<li>\n<p><strong>E_V</strong><br>Measured total cell voltage in V.</p>\n</li>\n<li>\n<p><strong>freq_Hz</strong><br>Frequency of EIS measurement points in Hz.<br>This column contains NaN values during non-EIS operation.</p>\n</li>\n<li>\n<p><strong>Z_magnitude_Ohm</strong><br>Magnitude of the cell impedance in Ohm.<br>Only populated during EIS measurements.</p>\n</li>\n<li>\n<p><strong>Z_phase_deg</strong><br>Phase angle of the cell impedance in degrees.<br>Only populated during EIS measurements.</p>\n</li>\n<li>\n<p><strong>conductivity_uScm</strong><br>Conductivity of the circulating water in &micro;S/cm.</p>\n</li>\n<li>\n<p><strong>pressure_bar_abs</strong><br>Cathode pressure in bar absolute.</p>\n</li>\n<li>\n<p><strong>H2_uncorrected_vol_percent</strong><br>Raw hydrogen concentration in oxygen measured by gas chromatography (in vol.%).</p>\n</li>\n<li>\n<p><strong>H2_corrected_vol_percent</strong><br>Dilution-corrected hydrogen concentration in oxygen (in vol.%).<br>This is the physically meaningful value and should be used for analysis.</p>\n</li>\n<li>\n<p><strong>measurement_type</strong><br>Identifier of the current step in the experimental protocol. Possible values include:</p>\n<ul>\n<li>\n<p>pressure_build_up</p>\n</li>\n<li>\n<p>conditioning</p>\n</li>\n<li>\n<p>POL_GEIS</p>\n</li>\n<li>\n<p>H2_char</p>\n</li>\n<li>\n<p>CV_cycles</p>\n</li>\n<li>\n<p>OCV</p>\n</li>\n<li>\n<p>CstC_12A</p>\n</li>\n<li>\n<p>GEIS_12A</p>\n</li>\n<li>\n<p>CstC_1A</p>\n</li>\n<li>\n<p>GEIS_1A</p>\n</li>\n</ul>\n</li>\n<li>\n<p><strong>measurement_type_counter</strong><br>Counter for each measurement type, enabling identification of repeated sequences<br>(e.g., multiple polarization curves across the experiment).</p>\n</li>\n</ul>\n<h3><strong>---------------------------------------------------------</strong></h3>\n<h3><strong>Measurement Protocol</strong></h3>\n<p>The experimental procedure consists of repeated sequences of conditioning, characterization, and stress phases.</p>\n<p>General structure:</p>\n<ol>\n<li>\n<p><strong>Pressure build-up phase (ID: pressure_build_up)</strong><br>Stepwise current holds are applied to reach the target cathode pressure (30 bar absolute).</p>\n</li>\n<li>\n<p><strong>Conditioning phase (ID: conditioning)</strong><br>Long-term operation at defined current and voltage to stabilize the system.</p>\n</li>\n<li>\n<p><strong>Characterization phase</strong><br>Repeated characterization including:</p>\n<ul>\n<li>\n<p>polarization curves with galvanostatic EIS measurements (ID: POL_GEIS)</p>\n</li>\n<li>\n<p>hydrogen crossover measurements under diferent constant currents (ID: H2_char)</p>\n</li>\n<li>another polarization curves with galvanostatic EIS measurements (ID: POL_GEIS)</li>\n</ul>\n</li>\n<li>\n<p><strong>Stress phase</strong><br>Accelerated degradation protocol including:</p>\n<ul>\n<li>\n<p>voltage cycling (ID: CV_cycles)</p>\n</li>\n<li>\n<p>open circuit voltage (OCV) measurements (ID: OCV)</p>\n</li>\n<li>\n<p>long constant-current holds at 12A high followed by a GEIS (ID: CstC_12A, GEIS_12A)</p>\n</li>\n<li>long constant-current holds at 1A high followed by a GEIS (ID: CstC_1A, GEIS_1A)</li>\n</ul>\n</li>\n</ol>\n<p>These characterization and stress phases are repeated multiple times over the total duration of approximately 1500 hours.</p>\n<p>A detailed schematic of the protocol is provided in the accompanying PDF documentation.</p>\n<h3><strong>---------------------------------------------------------</strong></h3>\n<h3><strong>Sampling Rates and Data Density</strong></h3>\n<ul>\n<li>\n<p>Electrical signals (current, voltage, temperature, pressure, conductivity) are recorded continuously with high temporal resolution (every second).</p>\n</li>\n<li>\n<p>Gas chromatography (GC) measurements are performed at significantly lower frequency (typically every 1.5 minutes).</p>\n</li>\n<li>\n<p>EIS data are recorded only during dedicated measurement steps.</p>\n</li>\n</ul>\n<p>As a result:</p>\n<ul>\n<li>\n<p>Many columns (especially gas analysis and EIS data) contain NaN values outside their respective measurement phases.</p>\n</li>\n<li>\n<p>This is expected behavior and reflects the experimental design.</p>\n</li>\n</ul>\n<h3><strong>---------------------------------------------------------</strong></h3>\n<h3><strong>Missing Data and Known Issues</strong></h3>\n<ul>\n<li>\n<p>NaN values indicate:</p>\n<ul>\n<li>\n<p>parameters not measured at a given time (e.g., EIS outside EIS phases)</p>\n</li>\n<li>\n<p>lower sampling rates (e.g., gas chromatography)</p>\n</li>\n<li>\n<p>temporary measurement interruptions</p>\n</li>\n</ul>\n</li>\n<li>\n<p>Between approximately 300 h and 500 h:</p>\n<ul>\n<li>\n<p>pressure and conductivity data are partially unavailable due to a temporary connection error for the PtBlack and PtNano dataset</p>\n</li>\n</ul>\n</li>\n<li>\n<p>Temperature measurements:</p>\n<ul>\n<li>\n<p>represent the cell block temperature, not the exact reaction temperature</p>\n</li>\n<li>\n<p>may show deviations due to self-heating at high current densities</p>\n</li>\n</ul>\n</li>\n</ul>\n<h3><strong>---------------------------------------------------------</strong></h3>\n<h3><strong>Data Usage Notes</strong></h3>\n<ul>\n<li>\n<p>For hydrogen crossover analysis, use <strong>H2_corrected_vol_percent</strong> only.</p>\n</li>\n<li>\n<p>EIS data should be filtered using:</p>\n<ul>\n<li>\n<p>freq_Hz not NaN &rarr; EIS data</p>\n</li>\n</ul>\n</li>\n<li>\n<p>Constant-current segments can be isolated using:</p>\n<ul>\n<li>\n<p>freq_Hz = NaN</p>\n</li>\n</ul>\n</li>\n<li>\n<p>The measurement_type and measurement_type_counter columns are essential for:</p>\n<ul>\n<li>\n<p>extracting specific protocol steps</p>\n</li>\n<li>\n<p>comparing repeated measurements across time</p>\n</li>\n</ul>\n</li>\n</ul>\n<h3><strong>---------------------------------------------------------</strong></h3>\n<h3><strong>Additional Files</strong></h3>\n<p>The dataset is accompanied by:</p>\n<ul>\n<li>\n<p><strong>Detailed dataset documentation (PDF)</strong><br>Includes full experimental description, protocol diagrams, and extended explanations.</p>\n</li>\n<li>\n<p><strong>Jupyter Notebook</strong><br>Provides example code for:</p>\n<ul>\n<li>\n<p>loading the dataset</p>\n</li>\n<li>\n<p>filtering specific measurement phases</p>\n</li>\n<li>\n<p>basic exploratory analysis</p>\n</li>\n</ul>\n</li>\n</ul>\n<h3><strong>---------------------------------------------------------</strong></h3>\n<h3><strong>License</strong></h3>\n<p>This dataset is licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0).</p>\n<h3><strong>Citation</strong></h3>\n<p>If you use this dataset, please cite the original publication linked to this dataset: <a href=\"https://doi.org/10.1039/d6ey00106h\" rel=\"noopener\">https://doi.org/10.1039/d6ey00106h</a></p>\n<h3><strong>Notes</strong></h3>\n<p>This dataset is designed to support both classical electrochemical analysis and modern data-driven approaches. Users are encouraged to consult the accompanying documentation and notebook for correct interpretation of the measurement protocol and data structure.</p>",
+    "doi": "10.5281/zenodo.19361280",
+    "journal": {
+      "pages": "https://doi.org/10.1039/d6ey00106h",
+      "title": "EES Catalysis"
+    },
+    "keywords": [
+      "proton exchange membrane (PEM)",
+      "water electrolysis",
+      "gas crossover",
+      "gas recombination catalyst (GRC)",
+      "degradation",
+      "AST protocol",
+      "electrochemical data",
+      "operational data"
+    ],
+    "language": "eng",
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "publication_date": "2026-04-01",
+    "related_identifiers": [
+      {
+        "identifier": "10.1039/d6ey00106h",
+        "relation": "isPublishedIn",
+        "resource_type": "publication",
+        "scheme": "doi"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "19361279"
+          }
+        }
+      ]
+    },
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "title": "Datasets: Time-Resolved Performance and Stability of Different Gas Recombination Catalysts in PEM Water Electrolysis",
+    "version": "Version v1"
+  },
+  "modified": "2026-07-15T11:40:59.203658+00:00",
+  "owners": [
+    {
+      "id": "1594474"
+    }
+  ],
+  "recid": "19361280",
+  "revision": 6,
+  "state": "done",
+  "stats": {
+    "downloads": 1923,
+    "unique_downloads": 166,
+    "unique_views": 301,
+    "version_downloads": 1923,
+    "version_unique_downloads": 166,
+    "version_unique_views": 301,
+    "version_views": 342,
+    "views": 342
+  },
+  "status": "published",
+  "submitted": true,
+  "swh": {},
+  "title": "Datasets: Time-Resolved Performance and Stability of Different Gas Recombination Catalysts in PEM Water Electrolysis",
+  "updated": "2026-07-15T11:40:59.203658+00:00"
+}
